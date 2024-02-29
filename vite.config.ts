@@ -6,14 +6,6 @@ import { defineConfig } from 'vite'
 export default defineConfig(({ mode }) => {
   if (mode === 'client') {
     return {
-      build: {
-        rollupOptions: {
-          input: ['/app/style.css'],
-          output: {
-            assetFileNames: 'static/assets/[name].[ext]'
-          }
-        }
-      },
       plugins: [client()]
     }
   } else {
