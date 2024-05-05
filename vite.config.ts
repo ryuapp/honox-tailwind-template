@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [honox(), pages()],
     build: {
-      assetsDir: 'static',
+      assetsDir: '',
       ssrEmitAssets: true,
     },
   }
