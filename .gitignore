@@ -3,9 +3,3 @@ dist
 .wrangler
 .dev.vars
 .hono
-
-# Change them to your taste:
-wrangler.toml
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
