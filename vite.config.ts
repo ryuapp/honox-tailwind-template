@@ -9,20 +9,13 @@ export default defineConfig(({ mode }) => {
       plugins: [client()],
       build: {
         rollupOptions: {
-          input: ["/app/style.css"],
-          output: {
-            assetFileNames: "static/assets/[name].[hash].[ext]",
-          },
+          input: ["/app/style.css"]
         },
       },
     }
   }
 
   return {
-    plugins: [honox(), pages()],
-    build: {
-      assetsDir: 'static',
-      ssrEmitAssets: true,
-    },
+    plugins: [honox(), pages()]
   }
 })
